@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Proteus.Bot.Builder.Extensions.Telemetry</id>
+    <version>$version$</version>
+    <authors>Stephen A. Bohlen</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provide interfaces and classes for capturing extended telemetry data in the Microsoft Bot Builder.  Intended to be used in combination with one or more TeleletryWriter packages.
+    </description>
+    <projectUrl>https://github.com/ProteusProject/Proteus.Bot.Builder.Extensions</projectUrl>
+    <iconUrl>http://docs.botframework.com/images/bot_icon.png</iconUrl>
+    <summary>Telemetry extensions for Microsoft.Bot.Builder.</summary>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Microsoft.Bot.Builder" version="$builder$"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.dll" target="lib\net46"/>
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.xml" target="lib\net46" />
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.pdb" target="lib\net46" />
+    <file src="**\*.cs" exclude="**\obj\**\*.cs" target="src" />
+  </files>
+</package>

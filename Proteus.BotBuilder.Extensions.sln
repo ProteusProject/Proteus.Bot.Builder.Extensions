@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Azure.Telemetry.AppInsightsWriter", "src\Proteus.Bot.Builder.Extensions.Azure.Telemetry.AppInsightsWriter\Proteus.Bot.Builder.Extensions.Azure.Telemetry.AppInsightsWriter.csproj", "{6E1C8F10-E55D-4400-84D8-36115B1AA436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Azure.Telemetry.BlobStorageWriter", "src\Proteus.Bot.Builder.Extensions.Azure.Telemetry.BlobStorageWriter\Proteus.Bot.Builder.Extensions.Azure.Telemetry.BlobStorageWriter.csproj", "{10949757-BF64-4EDE-AD2E-603FDE669274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Azure.Telemetry.QueueStorageWriter", "src\Proteus.Bot.Builder.Extensions.Azure.Telemetry.QueueStorageWriter\Proteus.Bot.Builder.Extensions.Azure.Telemetry.QueueStorageWriter.csproj", "{1A4FC384-5AC2-4340-B6C7-79435EB68691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Telemetry", "src\Proteus.Bot.Builder.Extensions.Telemetry\Proteus.Bot.Builder.Extensions.Telemetry.csproj", "{B2669900-19B3-43CE-B884-5A455C998F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter", "src\Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter\Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter.csproj", "{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proteus.Bot.Builder.Extensions.Telemetry.TextFileWriter", "src\Proteus.Bot.Builder.Extensions.Telemetry.TextFileWriter\Proteus.Bot.Builder.Extensions.Telemetry.TextFileWriter.csproj", "{574382CA-F3DC-4C88-8E2E-9208EE913AA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		UnitTesting|Any CPU = UnitTesting|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.UnitTesting|Any CPU.ActiveCfg = UnitTesting|Any CPU
+		{6E1C8F10-E55D-4400-84D8-36115B1AA436}.UnitTesting|Any CPU.Build.0 = UnitTesting|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.UnitTesting|Any CPU.ActiveCfg = UnitTesting|Any CPU
+		{10949757-BF64-4EDE-AD2E-603FDE669274}.UnitTesting|Any CPU.Build.0 = UnitTesting|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.UnitTesting|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4FC384-5AC2-4340-B6C7-79435EB68691}.UnitTesting|Any CPU.Build.0 = Release|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.UnitTesting|Any CPU.ActiveCfg = UnitTesting|Any CPU
+		{B2669900-19B3-43CE-B884-5A455C998F33}.UnitTesting|Any CPU.Build.0 = UnitTesting|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.UnitTesting|Any CPU.ActiveCfg = UnitTesting|Any CPU
+		{041CEA1B-7A07-4BC3-990A-1EB80AA03F70}.UnitTesting|Any CPU.Build.0 = UnitTesting|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.UnitTesting|Any CPU.ActiveCfg = UnitTesting|Any CPU
+		{574382CA-F3DC-4C88-8E2E-9208EE913AA8}.UnitTesting|Any CPU.Build.0 = UnitTesting|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EBEE93-2509-4E6F-9422-E8B2001F6656}
+	EndGlobalSection
+EndGlobal

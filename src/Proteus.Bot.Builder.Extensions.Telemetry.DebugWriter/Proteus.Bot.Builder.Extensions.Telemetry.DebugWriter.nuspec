@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter</id>
+    <version>$version$</version>
+    <authors>Stephen A. Bohlen</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provide interfaces and classes for capturing extended telemetry data in the Microsoft Bot Builder to the DEBUG output window.
+    </description>
+    <projectUrl>https://github.com/ProteusProject/Proteus.Bot.Builder.Extensions</projectUrl>
+    <iconUrl>http://docs.botframework.com/images/bot_icon.png</iconUrl>
+    <summary>Telemetry DEBUG output writer for Microsoft.Bot.Builder.</summary>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Proteus.Bot.Builder.Extensions.Telemetry" version="$telemetry$"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter.dll" target="lib\net46"/>
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter.xml" target="lib\net46" />
+    <file src="bin\release\Proteus.Bot.Builder.Extensions.Telemetry.DebugWriter.pdb" target="lib\net46" />
+    <file src="**\*.cs" exclude="**\obj\**\*.cs" target="src" />
+  </files>
+</package>
