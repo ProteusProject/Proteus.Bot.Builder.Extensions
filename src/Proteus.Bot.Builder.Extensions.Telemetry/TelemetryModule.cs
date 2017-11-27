@@ -65,7 +65,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
                 builder.RegisterAssemblyTypes(assembly)
                     .Where(t => t.GetInterfaces().Contains(typeof(ITelemetryWriter)))
                     .AsImplementedInterfaces()
-                    .SingleInstance();
+                    .InstancePerRequest();
             }
         }
 
@@ -86,7 +86,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         /// <param name="builder">The builder.</param>
         private void RegisterDefaultOutputFormatter(ContainerBuilder builder)
         {
-            builder.RegisterType<MachineOptimizedOutputFormatter>().As<ITelemetryOutputFormatter>();
+            builder.RegisterType<MachineOptimizedOutputFormatter>().As<ITelemetryOutputFormatter>().SingleInstance();
         }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         /// <param name="builder">The builder.</param>
         private void RegisterTelemetryReporter(ContainerBuilder builder)
         {
-            builder.RegisterType<TelemetryReporter>().AsImplementedInterfaces().SingleInstance();
+            builder.RegisterType<TelemetryReporter>().AsImplementedInterfaces().InstancePerRequest();
         }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         /// <param name="builder">The builder.</param>
         private void RegisterDefaultTelemetryContext(ContainerBuilder builder)
         {
-            builder.RegisterType<TelemetryContext>().AsImplementedInterfaces();
+            builder.RegisterType<TelemetryContext>().AsImplementedInterfaces().InstancePerRequest();
         }
 
         /// <summary>
@@ -113,7 +113,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         /// <param name="builder">The builder.</param>
         private void RegisterDefaultDateTimeProvider(ContainerBuilder builder)
         {
-            builder.RegisterType<DateTimeProvider>().AsImplementedInterfaces().SingleInstance();
+            builder.RegisterType<DateTimeProvider>().AsImplementedInterfaces().InstancePerRequest();
         }
 
         /// <summary>
@@ -124,7 +124,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         {
             foreach (var instance in _configuration.TelemetryWriterInstances)
             {
-                builder.RegisterInstance(instance).AsImplementedInterfaces().SingleInstance();
+                builder.RegisterInstance(instance).AsImplementedInterfaces().InstancePerRequest();
             }
         }
 
@@ -136,7 +136,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         {
             foreach (var type in _configuration.TelemetryWriterTypes)
             {
-                builder.RegisterType(type).AsImplementedInterfaces().SingleInstance();
+                builder.RegisterType(type).AsImplementedInterfaces().InstancePerRequest();
             }
         }
 
@@ -148,7 +148,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         {
             foreach (var configuration in _configuration.TelemetryConfigurations)
             {
-                builder.RegisterInstance(configuration).AsSelf().SingleInstance();
+                builder.RegisterInstance(configuration).AsSelf().InstancePerRequest();
             }
         }
     }
