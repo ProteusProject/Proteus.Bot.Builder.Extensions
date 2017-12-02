@@ -86,7 +86,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         /// <param name="builder">The builder.</param>
         private void RegisterDefaultOutputFormatter(ContainerBuilder builder)
         {
-            builder.RegisterType<MachineOptimizedOutputFormatter>().As<ITelemetryOutputFormatter>().SingleInstance();
+            builder.RegisterType<MachineOptimizedOutputFormatter>().As<ITelemetryOutputFormatter>().InstancePerRequest();
         }
 
         /// <summary>
