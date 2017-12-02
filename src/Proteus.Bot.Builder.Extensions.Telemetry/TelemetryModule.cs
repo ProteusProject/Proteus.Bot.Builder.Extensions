@@ -124,7 +124,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         {
             foreach (var instance in _configuration.TelemetryWriterInstances)
             {
-                builder.RegisterInstance(instance).AsImplementedInterfaces().InstancePerRequest();
+                builder.RegisterInstance(instance).AsImplementedInterfaces();
             }
         }
 
@@ -148,7 +148,7 @@ namespace Proteus.Bot.Builder.Extensions.Telemetry
         {
             foreach (var configuration in _configuration.TelemetryConfigurations)
             {
-                builder.RegisterInstance(configuration).AsSelf().InstancePerRequest();
+                builder.RegisterInstance(configuration).AsSelf();
             }
         }
     }
