@@ -11,7 +11,7 @@ GOTO :EOF
 echo .
 echo Processing file %1 ...
 echo .
-..\packages\NuGet.CommandLine.4.3.0\tools\nuget.exe push .\%1 -Source https://www.nuget.org/api/v2/package/
+..\packages\NuGet.CommandLine.4.5.1\tools\nuget.exe push .\%1 -Source https://www.nuget.org/api/v2/package/
 echo .
 echo                       ...complete!
 GOTO :EOF
